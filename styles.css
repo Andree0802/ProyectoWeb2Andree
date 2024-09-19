@@ -23,7 +23,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-image: url('cocineros2.jpg');
+    background-image: url('../proyecto/img/cocineros2.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -329,4 +329,43 @@ h2, h3 {
 
 .formulario .derecha{
     justify-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajustes para tablets */
+    .tarjeta, .fotos {
+        width: calc(50% - 20px);
+    }
+    
+    .formulario {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes para móviles */
+    .tarjeta, .fotos {
+        width: 100%;
+    }
+    
+    .titulo-header {
+        font-size: 3rem;
+    }
+    
+    .texto-header {
+        font-size: 1.2rem;
+    }
+    
+    .desaparecer {
+        display: none;
+    }
+
+    /* Navegación vertical para móviles */
+    nav.menu {
+        flex-direction: column;
+    }
+
+    nav.menu a {
+        margin: 5px 0;
+    }
 }
