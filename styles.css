@@ -1,0 +1,332 @@
+/* Importación de fuentes y estilos básicos */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* Estilos generales y de centrado */
+body {
+    margin: 0;
+    padding: 1%;
+    font-family: 'Nunito', sans-serif;
+    background-color: #333;
+    /* Centrado general de todo el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal para limitar el ancho máximo del contenido */
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos del encabezado */
+header {
+    background-image: url('../proyecto/img/cocineros2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 90%;
+    padding: 1%;
+    color: #fff;
+    text-align: center;
+    /* Centrado vertical y horizontal del contenido del encabezado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+/* Estilos de navegación */
+nav.menu {
+    margin: 0;
+    background-color: rgba(255, 160, 122, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    /* Centrado horizontal de los elementos de navegación */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav.menu a:hover {
+    color: #ff6347;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos del contenido del encabezado */
+.contenido-header {
+    /* Centrado vertical de los elementos del encabezado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-header {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 1px #333;
+}
+
+.linea-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 3px;
+    background: #ff6347;
+    margin: 20px;
+}
+
+.texto-header {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px #333;
+}
+
+.action-header {
+    color: #fff;
+    text-shadow: 2px 2px 1px #333;
+    text-decoration: none;
+    border: 2px solid #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.action-header:hover {
+    background: #ff6347;
+}
+
+/* Estilos del contenido principal */
+main {
+    width: 86%;
+    max-width: 1000px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos de secciones y títulos */
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #ff6347;
+}
+
+/* Estilos de tarjetajdksalds */
+.contenido-cajas {
+    /* Centrado y espaciado uniforme de las tarjetas */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    /* Ancho responsivo con margen entre tarjetas */
+    width: calc(33.333% - 20px);
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.contenido-tarjeta {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilos de la galería */
+.galeria {
+    /* Centrado y espaciado uniforme de las imágenes */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fotos {
+    /* Ancho responsivo con margen entre fotos */
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+}
+
+.fotos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilos del acordeón */
+.container{
+    justify-content: center;
+    align-content: center;
+}
+
+.categorias{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.nosotros{
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.accordion {
+    width: 100%;
+    background-color: #ff6347;
+    padding: 15px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item{
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.7s;
+}
+
+.section {
+    position: relative;
+    padding: 15px;
+    color: #ff6347;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 1px solid #ff6347;
+    font-weight: 700;
+}
+
+.info {
+    width: 90%;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.item.active > .info {
+    max-height: 150px;
+    opacity: 1;
+}
+
+.item.active {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+
+.enlaces a {
+    text-decoration: none;
+    color: #333;
+}
+
+.enlaces a:hover{
+    color: #ff6347;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+}
+
+/* Estilos del pie de página */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Estilos del formulario de contacto */
+.contacto {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.formulario {
+    /* Centrado y limitación del ancho del formulario */
+    display: grid;
+    gap: 5px;
+    width: 100%;
+}
+
+.formulario input, .formulario textarea {
+    margin: 10px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.formulario .boton{
+    /* Centrado del botón del formulario */
+    background: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario .derecha{
+    justify-self: center;
+}
