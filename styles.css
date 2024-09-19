@@ -23,7 +23,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-image: url('img/cocineros2.jpg');
+    background-image: url('cocineros2.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 20px;
